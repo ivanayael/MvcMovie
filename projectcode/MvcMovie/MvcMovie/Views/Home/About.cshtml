@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+
+<h3>@ViewData["Message"]</h3>
+
+<p>Made by Ivana Yael Curra following MVC Tutorial.</p>
+
+@model MvcMovie.Models.Address
+
+<h2>Contact</h2>
+<address>
+    @Model.Street<br>
+    @Model.City, @Model.State @Model.PostalCode<br>
+    <abbr title="Phone">P:</abbr> 425.555.0100
+</address>
